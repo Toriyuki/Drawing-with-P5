@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(400, 400);
 }
 
 function draw() {
@@ -57,4 +57,39 @@ function draw() {
   ellipse(125, nextBox + 60, 10, 10);
   ellipse(155, nextBox + 60, 10, 10);
 
+
+  //Cirle with star in middle
+  //Fills in background to blue
+  fill(0, 0, 255);
+  rect(nextBox, nextBox, 200, 200);
+
+  //Creates a white circle
+  fill(255);
+  ellipse(nextBox + 100, nextBox + 100, 100, 100);
+
+  //Creates an inner green circle
+  fill(0, 180, 0);
+  ellipse(nextBox + 100, nextBox + 100, 90, 90);
+
+  //White star
+  stroke(255);
+  fill(255);
+  beginShape();
+  vertex(nextBox + 67.508, nextBox + 140);
+  vertex(nextBox + 100, nextBox + 50);
+  vertex(nextBox + 132.492, nextBox + 140);
+  vertex(nextBox + 51.495, nextBox + 83.147);
+  vertex(nextBox + 148.505, nextBox + 83.147);
+  endShape(close);
+  
+  //Red star
+  noStroke();
+  fill(255, 0, 0);
+  beginShape();
+  vertex(nextBox + 128.950, nextBox + 136.408);
+  vertex(nextBox + 100, nextBox + 55);
+  vertex(nextBox + 71.050, nextBox + 136.406);
+  vertex(nextBox + 142.798, nextBox + 84.594);
+  vertex(nextBox + 57.202, nextBox + 84.594);
+  endShape(close);
 }
